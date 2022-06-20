@@ -7,6 +7,7 @@ UNAME=/usr/bin/uname
 CAT=/usr/bin/cat
 PYTHON=/usr/bin/python
 DATE=/usr/bin/date
+HOSTNAMECTL=/usr/bin/hostnamectl
 
 # Vars
 INTERVAL=2
@@ -21,6 +22,8 @@ ${DATE}
 echo "===================="
 
 echo "----ooO SYSTEM INFORMATION Ooo----"
+${HOSTNAMECTL}
+echo
 ${CAT} ${RELEASE}
 echo
 ${UNAME} -a 
